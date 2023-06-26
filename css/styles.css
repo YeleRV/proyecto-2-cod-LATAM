@@ -159,3 +159,23 @@ footer{
     color: #fbfbfb;
     align-items: center;
 }
+
+/*para tablet*/
+@media(min-width:768px){
+p{
+    font-size: 30px;
+}}
+
+/*para desktop*/
+@media(min-width:1024px){
+    section{
+        flex-direction: row;
+        font-size: 25px;
+        width: 100%;
+        max-width: 800px;
+    h1{
+        font-size: 48px;
+    }    
+    h2{
+        font-size: 32px;
+    }}}
