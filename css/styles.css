@@ -172,7 +172,11 @@ p{
         flex-direction: row;
         font-size: 25px;
         width: 100%;
-        max-width: 800px;
+        min-height: none;   
+    section#inicio{
+        text-align: left;
+        align-items: left;
+    }
     h1{
         font-size: 48px;
     }    
