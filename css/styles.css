@@ -41,7 +41,7 @@ p{
 }
 
 a.botonCV{
-    display:inline-block;
+    display:inline-flex;
     background-color: #af599e;
     color: #fbfbfb;
     font-size: 20px;
@@ -170,16 +170,19 @@ p{
 @media(min-width:1024px){
     section{
         flex-direction: row;
-        font-size: 25px;
+        font-size: 28px;
         width: 100%;
-        min-height: none;   
-    section#inicio{
-        text-align: left;
-        align-items: left;
-    }
+        }
     h1{
         font-size: 48px;
     }    
+    } 
+    article.informacion{
+        text-align: start;
+        padding-left: 80px;
+    }   
+    h1, p.inicio{
+        text-align: start;
     h2{
         font-size: 32px;
-    }}}
+    }}
