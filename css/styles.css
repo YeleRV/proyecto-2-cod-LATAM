@@ -73,9 +73,16 @@ ul#menu{
 
 li.menu-item a{
     display: flex;
-    padding: 16px 50px;
+    padding: 16px 40px;
     text-decoration: none;
 }
+
+li.menu-item:hover,
+a.botonCV:hover, li.menu-item a.active {
+    background: rgba(175, 89, 158, 0.3); 
+    transition: background-color 0.3s;
+}
+
 
 section{
     display: flex;
@@ -133,7 +140,7 @@ p.contacto{
 }
 
 div.botones{
-    width: 100%;
+    width: 80%;
     height: 150px;
     text-decoration: none;
     color: inherit;
@@ -141,11 +148,14 @@ div.botones{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-left: 10%;
     }
 
 .boton{
     width: 80px;
     height: 80px;
+    margin-left: 5px;
+    margin-right: 5px ;
 }
 
 .mail{
@@ -160,6 +170,8 @@ footer{
     align-items: center;
 }
 
+
+
 /*para tablet*/
 @media(min-width:768px){
 p{
@@ -168,21 +180,30 @@ p{
 
 /*para desktop*/
 @media(min-width:1024px){
-    section{
+    section#inicio{
         flex-direction: row;
-        font-size: 28px;
-        width: 100%;
+        
         }
     h1{
         font-size: 48px;
     }    
     } 
     article.informacion{
+        width: 60%;
         text-align: start;
-        padding-left: 80px;
     }   
     h1, p.inicio{
         text-align: start;
     h2{
         font-size: 32px;
-    }}
+    }
+#contacto {
+    max-width: 700px;
+
+}
+
+div.botones{
+    width: 60%;
+    margin-left: 20%;
+    }
+}
