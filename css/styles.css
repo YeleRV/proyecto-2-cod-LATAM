@@ -66,14 +66,16 @@ header{
 }
 
 ul#menu{
-    display: flex;
-    font-size: 20px;
     list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 15px;
 }
 
 li.menu-item a{
     display: flex;
-    padding: 16px 40px;
+    padding: 16px 20px;
     text-decoration: none;
 }
 
@@ -117,8 +119,8 @@ img.logo{
 }
 
 img.nutricionista{
-    width: 400px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
     border-radius: 70%;
    }
 
@@ -175,7 +177,7 @@ footer{
 /*para tablet*/
 @media(min-width:768px){
 p{
-    font-size: 30px;
+    font-size: 20px;
 }}
 
 /*para desktop*/
@@ -187,23 +189,30 @@ p{
     h1{
         font-size: 48px;
     }    
-    } 
     article.informacion{
         width: 60%;
         text-align: start;
-    }   
+    }  
+
     h1, p.inicio{
         text-align: start;
+
     h2{
         font-size: 32px;
     }
-#contacto {
-    max-width: 700px;
 
-}
-
-div.botones{
+    img.nutricionista{
+        max-width: 50%;
+        height: 50%;
+        border-radius: 70%;
+       }
+      
+    #contacto {
+        max-width: 700px;
+    }
+    
+    div.botones{
     width: 60%;
     margin-left: 20%;
     }
-}
+}}
