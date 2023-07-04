@@ -1,6 +1,6 @@
 const menuItems = document.querySelectorAll(".menu-item");
 
-menuItems.ForEach(function (item) {
+menuItems.forEach(function (item) {
     item.addEventListener("click", function(e) {
         const currentItem = document.querySelector(".active");
         currentItem.classList.remove("active");
